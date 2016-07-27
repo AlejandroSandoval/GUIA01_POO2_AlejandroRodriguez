@@ -14,5 +14,10 @@ public class Demo {
     public Demo() {
         System.err.println("Hola Mundo!");
     }
+
+    @Override
+    public String toString() {
+        return "Demo{" + '}';
+    }
     
 }
