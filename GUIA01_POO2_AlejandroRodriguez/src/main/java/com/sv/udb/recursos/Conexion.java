@@ -29,7 +29,7 @@ public class Conexion {
         }
         catch(SQLException ex)
         {
-            System.err.println("Error: " + ex.getMessage());
+            System.err.println("Errorrrr: " + ex.getMessage());
         }
         return conn;
     }
@@ -40,7 +40,7 @@ public class Conexion {
         {
             Properties prop = new Properties();
 //            String propFileName = System.getProperty("user.dir") + "/config.properties";
-            String propFileName = URLDecoder.decode(this.getClass().getClassLoader().getResource("/config.properties").getPath(), "UTF-8");
+            String propFileName = URLDecoder.decode(this.getClass().getClassLoader().getResource("/umm/config.properties").getPath(), "UTF-8");
             File file = new File(propFileName);
             FileInputStream fis = new FileInputStream(file.getAbsoluteFile());
             prop.load(fis);
@@ -56,7 +56,7 @@ public class Conexion {
         }
        catch(Exception ex)
        {
-           System.out.println(ex.getMessage());
+           System.out.println("Error de archivo:"+ex.getMessage());
            return true;
        }
     }
