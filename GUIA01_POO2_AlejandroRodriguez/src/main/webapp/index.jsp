@@ -78,11 +78,18 @@
                                   </div>
                                   <div class="col l7 m7 s12">
                                       <div class="input-field">
-                                        <select>
-                                          <option value="" disabled selected>Choose your option</option>
-                                          <option value="1">Option 1</option>
-                                          <option value="2">Option 2</option>
-                                          <option value="3">Option 3</option>
+                                        <select name="cmbPersona">
+                                        <jsp:useBean id="beanPersonaCtrl" class="com.sv.udb.controlador.PersonaCtrl" scope="page"/>
+                                        <c:forEach items="${beanPersonaCtrl.consTodo()}" var="fila">
+                                            <c:choose>
+                                                <c:when test="${fila.codiPers eq cmbPersona}">
+                                                    <option name="codi_pers" value="${fila.codiPers}" selected="">${fila.nombPers} ${fila.apelPers} - ${fila.duiPers}</option>
+                                                </c:when>
+                                                <c:otherwise>
+                                            <option name="codi_pers" value="${fila.codiPers}">${fila.nombPers} ${fila.apelPers} - ${fila.duiPers}</option>
+                                                </c:otherwise>
+                                            </c:choose>
+                                        </c:forEach>
                                         </select>
                                       </div>
                                   </div>

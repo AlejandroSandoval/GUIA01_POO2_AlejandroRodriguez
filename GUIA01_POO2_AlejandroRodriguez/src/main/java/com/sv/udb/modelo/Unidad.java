@@ -10,8 +10,8 @@ package com.sv.udb.modelo;
  * @author aleso
  */
 public class Unidad {
-    public int CodiUnid;
-    public String NombUnid;
+    private int CodiUnid;
+    private String NombUnid;
 
     public int getCodiUnid() {
         return CodiUnid;
