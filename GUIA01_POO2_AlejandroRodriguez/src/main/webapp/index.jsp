@@ -37,7 +37,6 @@
             <div class="row">
                 <div class="col s12">
                     <h3 class="light italic">Reportes con JasperReports</h3>
-                    <form>
                      <ul class="collapsible" data-collapsible="accordion">
                         <li>
                           <div class="collapsible-header grey darken-1 white-text"><i class="material-icons">looks_one</i>Visitas por Unidad Organizativa</div>
@@ -104,7 +103,6 @@
                           <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
                         </li>
                      </ul>
-                     </form>
                 </div>
             </div>
         </div>
