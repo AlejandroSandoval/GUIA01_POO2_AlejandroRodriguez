@@ -41,13 +41,14 @@
                         <li>
                           <div class="collapsible-header grey darken-1 white-text"><i class="material-icons">looks_one</i>Visitas por Unidad Organizativa</div>
                           <div class="collapsible-body">
+                              <form class="" method="post" action="Scripts/report1.jsp"target="_blank">
                               <div class="row">
                                   <div class="col s12 m6 l3">
                                       <p class="center-align">Unidad Organizativa</p>
                                   </div>
                                   <div class="col s12 m5 l6">
                                       <div class="input-field center-align ">
-                                        <select name="cmbUnidad">
+                                        <select name="cmbUnidad" id="cmbUnidad">
                                         <jsp:useBean id="beanUnidadCtrl" class="com.sv.udb.controlador.UnidadCtrl" scope="page"/>
                                         <c:forEach items="${beanUnidadCtrl.consTodo()}" var="fila">
                                             <c:choose>
@@ -63,21 +64,23 @@
                                       </div>
                                   </div>
                                   <div class="col s12 m12 l3">
-                                      <center><br><a class="waves-effect waves-light center-align btn">Ver Reporte</a></center>
+                                      <center><br><button class="waves-effect waves-light center-align btn red" type="submit">Ver Reporte</button></center>
                                   </div>
                               </div>
+                              </form>
                           </div>
                         </li>
                         <li>
                           <div class="collapsible-header grey darken-1 white-text"><i class="material-icons">looks_two</i>Visitas de una persona</div>
                           <div class="collapsible-body">
+                              <form class="" method="post" action="Scripts/report2.jsp"target="_blank">
                               <div class="row">
-                                  <div class="col l2 m2 s12">
-                                      <p>Persona:</p>
+                                  <div class="col s12 m4 l3">
+                                      <p class="center-align">Persona:</p>
                                   </div>
-                                  <div class="col l7 m7 s12">
+                                  <div class="col s12 m7 l6">
                                       <div class="input-field">
-                                        <select name="cmbPersona">
+                                        <select name="cmbPersona" id="cmbPersona">
                                         <jsp:useBean id="beanPersonaCtrl" class="com.sv.udb.controlador.PersonaCtrl" scope="page"/>
                                         <c:forEach items="${beanPersonaCtrl.consTodo()}" var="fila">
                                             <c:choose>
@@ -92,15 +95,32 @@
                                         </select>
                                       </div>
                                   </div>
-                                  <div class="col l3 m3 s12">
-                                      <br><a class="waves-effect waves-light btn">Ver Reporte</a>
+                                  <div class="col s12 m12 l3">
+                                      <center><br><button class="waves-effect waves-light center-align btn red" type="submit">Ver Reporte</button></center>
                                   </div>
                               </div>
+                              </form>
                           </div>
                         </li>
                         <li>
                           <div class="collapsible-header grey darken-1 white-text"><i class="material-icons">looks_3</i>Visitas por Unidad Organizativa con rango de Fechas</div>
-                          <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                          <div class="collapsible-body">
+                              <form class="" method="post" action="Scripts/report3.jsp"target="_blank">
+                                  <div class="row">
+                                      <div class="col s12 m6 offset-l1 l4">
+                                          <label for="date1">Fecha Inicio</label>
+                                          <input type="date"class="form-control" name="date1" id="date1">
+                                      </div>
+                                      <div class="col s12 m6 l4">
+                                          <label for="date2">Fecha Fin</label>
+                                          <input type="date"class="form-control" name="date2" id="date2">
+                                      </div>
+                                      <div class="col s12 m12 l3">
+                                          <center><br><button class="waves-effect waves-light center-align btn red" type="submit">Ver Reporte</button></center>
+                                      </div>
+                                  </div>
+                              </form>
+                          </div>
                         </li>
                      </ul>
                 </div>
