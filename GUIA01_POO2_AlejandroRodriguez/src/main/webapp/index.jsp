@@ -41,7 +41,7 @@
                         <li>
                           <div class="collapsible-header grey darken-1 white-text"><i class="material-icons">looks_one</i>Visitas por Unidad Organizativa</div>
                           <div class="collapsible-body">
-                              <form class="" method="post" action="Scripts/report1.jsp"target="_blank">
+                              <form class="" method="post" action="Scripts/report1.jsp" target="_blank">
                               <div class="row">
                                   <div class="col s12 m6 l3">
                                       <p class="center-align">Unidad Organizativa</p>
@@ -73,7 +73,7 @@
                         <li>
                           <div class="collapsible-header grey darken-1 white-text"><i class="material-icons">looks_two</i>Visitas de una persona</div>
                           <div class="collapsible-body">
-                              <form class="" method="post" action="Scripts/report2.jsp"target="_blank">
+                              <form class="" method="post" action="Scripts/report2.jsp" target="_blank">
                               <div class="row">
                                   <div class="col s12 m4 l3">
                                       <p class="center-align">Persona:</p>
@@ -105,15 +105,15 @@
                         <li>
                           <div class="collapsible-header grey darken-1 white-text"><i class="material-icons">looks_3</i>Visitas por Unidad Organizativa con rango de Fechas</div>
                           <div class="collapsible-body">
-                              <form class="" method="post" action="Scripts/report3.jsp"target="_blank">
+                              <form class="" method="post" action="Scripts/report3.jsp" target="_blank">
                                   <div class="row">
                                       <div class="col s12 m6 offset-l1 l4">
                                           <label for="date1">Fecha Inicio</label>
-                                          <input type="date"class="form-control" name="date1" id="date1">
+                                          <input type="date" class="form-control" name="date1" id="date1">
                                       </div>
                                       <div class="col s12 m6 l4">
                                           <label for="date2">Fecha Fin</label>
-                                          <input type="date"class="form-control" name="date2" id="date2">
+                                          <input type="date" class="form-control" name="date2" id="date2">
                                       </div>
                                       <div class="col s12 m12 l3">
                                           <center><br><button class="waves-effect waves-light center-align btn red" type="submit">Ver Reporte</button></center>
